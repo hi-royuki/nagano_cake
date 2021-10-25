@@ -1,0 +1,19 @@
+<h1>商品新規登録</h1>
+<!-- form_with部分 -->
+<%= form_with model:@item, local:true do |f| %>
+
+  <h4>商品画像</h4>
+ <%= f.attachment_field :image %>
+
+  <h4>商品名</h4>
+  <%= f.text_field :category %>
+
+  <h4>商品説明</h4>
+  <%= f.text_area :body %>
+  
+  <h4>ジャンル</h4>
+  
+
+  <%= f.submit '新規投稿' %>
+
+<% end %>
